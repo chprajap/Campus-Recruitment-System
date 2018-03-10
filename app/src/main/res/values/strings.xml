@@ -1,0 +1,18 @@
+<resources>
+    <string-array name="signup_spinner_id">
+    <item>Student</item>
+    <item>Comapany</item>
+    </string-array>
+    
+    <string name="app_name">Campus Recruitment System</string>
+    <string name="projectName">Campus Recruitment System</string>
+    <string name="createAccount">Create New Account</string>
+    <string name="userFullName">Name</string>
+    <string name="userName">Username</string>
+    <string name="userId">UserId</string>
+    <string name="userEmailId">EmailId</string>
+    <string name="userContactNo">ContactNo</string>
+    <string name="userPassword">Password</string>
+    <string name="userConfirmPassword">Confirm Password</string>
+    <string name="SignInButton">Sign In</string>
+</resources>
