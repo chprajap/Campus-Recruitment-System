@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</menu>-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/apply_for_jobs_id"
+            android:title="Apply For Jobs" />
+        <item
+            android:id="@+id/view_job_status_id"
+            android:title="View Job Status" />
+        <item
+            android:id="@+id/search_jobs_id"
+            android:title="Search Jobs" />
+        <item
+            android:id="@+id/update_details_id"
+            android:title="Update Details" />
+        <item
+            android:id="@+id/change_password_id"
+            android:title="Change Password" />
+    </group>
+</menu>

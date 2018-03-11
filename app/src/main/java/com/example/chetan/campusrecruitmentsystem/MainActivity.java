@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser!=null)
         {
+            startActivity(new Intent(this,StudentMainActivity.class));
+            finish();
             // user is signed in
             // if user is admin take to admin page else student
             // page else company page

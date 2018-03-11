@@ -15,10 +15,16 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class login extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+    private DatabaseReference rootRef;
     private EditText loginEmailText;
     private EditText loginPasswordText;
     private Button loginButton;
@@ -46,9 +52,30 @@ public class login extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
-                                Intent i = new Intent(login.this, StudentMainActivity.class);
-                                startActivity(i);
-                                finish();
+                                rootRef= FirebaseDatabase.getInstance().getReference().child("users");
+                                rootRef.addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                        if(dataSnapshot.hasChild(mAuth.getCurrentUser().getUid()))
+                                        {
+                                            Intent i = new Intent(login.this, StudentMainActivity.class);
+                                            startActivity(i);
+                                            finish();
+                                        }
+                                        else
+                                        {
+                                            Intent i = new Intent(login.this, updateDetails.class);
+                                            startActivity(i);
+                                            finish();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+
+                                    }
+                                });
+
                             }
                             else
                             {
