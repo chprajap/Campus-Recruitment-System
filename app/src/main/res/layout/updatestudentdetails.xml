@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:id="@+id/student_sideNabBar">
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -145,6 +146,7 @@
                 </RadioGroup>
 
                 <Spinner
+                    android:id="@+id/department_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -172,6 +174,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        app:headerLayout="@layout/profile_layout"
         app:menu="@menu/student_view"/>
 
 </android.support.v4.widget.DrawerLayout>

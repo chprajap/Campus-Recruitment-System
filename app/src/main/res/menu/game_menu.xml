@@ -5,6 +5,6 @@
     <item android:id="@+id/logout"
         android:title="Log Out" />
     <item android:id="@+id/help"
-        android:title="help" />
+        android:title="Help" />
 
 </menu>
