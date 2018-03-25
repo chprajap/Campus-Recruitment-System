@@ -4,22 +4,89 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/crs"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
+        </activity>
         <activity android:name=".login" />
         <activity android:name=".doSignUp" />
-        <activity android:name=".updateDetails" />
-        <activity android:name=".StudentMainActivity"></activity>
+        <activity android:name=".StudentMainActivity" />
+        <activity
+            android:name=".NavBarActivity"
+            android:label="@string/title_activity_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ApplyForJobsNavBar"
+            android:label="@string/title_activity_apply_for_jobs_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewJobStatusNavBar"
+            android:label="@string/title_activity_view_job_status_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchJobsNavBar"
+            android:label="@string/title_activity_search_jobs_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePasswordNavBar"
+            android:label="@string/title_activity_change_password_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateDetailsNavBar"
+            android:label="@string/title_activity_update_details_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CompanyUpdateDetailsNavBar"
+            android:label="@string/title_activity_company_update_details_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".loginAdmin" />
+        <activity android:name=".loginCompany" />
+        <activity
+            android:name=".CompanyNavBar"
+            android:label="@string/title_activity_company_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostJobs"
+            android:label="@string/title_activity_post_jobs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewStudentApplicationCompanyNavBar"
+            android:label="@string/title_activity_view_student_application_company_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CompanyChangePasswordNavBar"
+            android:label="@string/title_activity_company_change_password_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminChangePasswordNavBar"
+            android:label="@string/title_activity_admin_change_password_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminNavBarActivity"
+            android:label="@string/title_activity_admin_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminUpdateDetails"
+            android:label="@string/title_activity_admin_update_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManageStudentActivity"
+            android:label="@string/title_activity_manage_student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManageCompany"
+            android:label="@string/title_activity_manage_company"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
