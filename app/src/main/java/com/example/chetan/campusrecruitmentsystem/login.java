@@ -1,10 +1,12 @@
 package com.example.chetan.campusrecruitmentsystem;
 
 import android.content.Intent;
+import android.os.PatternMatcher;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,46 +47,71 @@ public class login extends AppCompatActivity {
 
                 String loginEmail = loginEmailText.getText().toString();
                 String loginPassword = loginPasswordText.getText().toString();
-                if(!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty((loginPassword)))
+
+                if(loginEmail.isEmpty())
                 {
-                    mAuth.signInWithEmailAndPassword(loginEmail, loginPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful())
-                            {
-                                rootRef= FirebaseDatabase.getInstance().getReference().child("users");
-                                rootRef.addValueEventListener(new ValueEventListener() {
-                                    @Override
-                                    public void onDataChange(DataSnapshot dataSnapshot) {
-                                        if(dataSnapshot.hasChild(mAuth.getCurrentUser().getUid()))
-                                        {
-                                            Intent i = new Intent(login.this, StudentMainActivity.class);
-                                            startActivity(i);
-                                            finish();
-                                        }
-                                        else
-                                        {
-                                            Intent i = new Intent(login.this, updateDetails.class);
-                                            startActivity(i);
-                                            finish();
-                                        }
-                                    }
-
-                                    @Override
-                                    public void onCancelled(DatabaseError databaseError) {
-
-                                    }
-                                });
-
-                            }
-                            else
-                            {
-                                String errorMessage = task.getException().getMessage();
-                                Toast.makeText(login.this, "Error: " + errorMessage, Toast.LENGTH_LONG ).show();
-                            }
-                        }
-                    });
+                    loginEmailText.requestFocus();
+                    loginEmailText.setError("Email id is required");
+                    return;
                 }
+                if(!Patterns.EMAIL_ADDRESS.matcher(loginEmail).matches())
+                {
+                    loginEmailText.requestFocus();
+                    loginEmailText.setError("Enter a valid email id");
+                    return;
+                }
+
+                if(loginPassword.isEmpty())
+                {
+                    loginPasswordText.requestFocus();
+                    loginPasswordText.setError("Password is required");
+                    return;
+                }
+                if(loginPassword.length()<6)
+                {
+                    loginPasswordText.requestFocus();
+                    loginPasswordText.setError("Password length must be minimum 6");
+                    return;
+                }
+
+                mAuth.signInWithEmailAndPassword(loginEmail, loginPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful())
+                        {
+                            rootRef= FirebaseDatabase.getInstance().getReference().child("Student");
+                            rootRef.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    if(dataSnapshot.hasChild(mAuth.getCurrentUser().getUid()))
+                                    {
+                                        Intent i = new Intent(login.this, NavBarActivity.class);
+                                        startActivity(i);
+                                        finish();
+                                    }
+                                    else
+                                    {
+                                        Intent i = new Intent(login.this, UpdateDetailsNavBar.class);
+                                        startActivity(i);
+                                        finish();
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+
+                        }
+                        else
+                        {
+                            String errorMessage = task.getException().getMessage();
+                            Toast.makeText(login.this, "Error: " + errorMessage, Toast.LENGTH_LONG ).show();
+                        }
+                    }
+                });
+
             }
         });
     }

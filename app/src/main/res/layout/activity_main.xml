@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.chetan.campusrecruitmentsystem.MainActivity"
+    android:background="#f7f7f7">
 
     <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.example.chetan.campusrecruitmentsystem.MainActivity">
+        android:background="@drawable/background4"
+        >
+
 
         <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus Recruitment"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        android:textColor="#3b5998"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        />
+
+
+        <TextView
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="system"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textColor="#3b5998"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            />
+
+
+        <!--<TextView
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,9 +52,9 @@
             android:gravity="center_horizontal"
             android:textSize="28dp"
             android:textStyle="bold"
-            />
+            />-->
 
-        <TextView
+        <!--<TextView
             android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,13 +64,14 @@
             android:gravity="center_horizontal"
             android:textSize="28dp"
             android:textStyle="bold"
-            />
+            />-->
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Admin Login"
+            android:id="@+id/admin_login_button"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -48,13 +79,16 @@
             android:padding="10dp"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:onClick="goToLogin"
+            android:background="@drawable/mybutton"
+            android:textColor="#8b9dc3"
+            android:onClick="goToAdminLogin"
             />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Student Login"
+            android:id="@+id/student_login_button"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -62,19 +96,24 @@
             android:padding="10dp"
             android:textStyle="bold"
             android:textSize="18dp"
+            android:background="@drawable/mybutton"
+            android:textColor="#8b9dc3"
             android:onClick="goToLogin"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Company Login"
+            android:id="@+id/company_login_button"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:padding="10dp"
             android:textStyle="bold"
             android:textSize="18dp"
-            android:onClick="goToLogin"/>
+            android:background="@drawable/mybutton"
+            android:textColor="#8b9dc3"
+            android:onClick="goToCompanyLogin"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -121,6 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create New Account"
+            android:id="@+id/new_account_button"
             android:background="#32CD32"
             android:layout_gravity="center_horizontal"
             android:textColor="#FFFFFF"
@@ -131,3 +171,30 @@
 
     </LinearLayout>
 </ScrollView>
+
+
+<!--
+
+<com.hanks.htextview.rainbow.RainbowTextView
+android:layout_width="120dp"
+android:layout_height="wrap_content"
+android:gravity="right"
+android:text="this is init sentence"
+android:textSize="20sp"
+app:colorSpace="150dp"
+app:colorSpeed="4dp"/>
+
+<com.hanks.htextview.rainbow.RainbowTextView
+android:layout_marginTop="30dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="system"
+android:elevation="20dp"
+android:textAllCaps="true"
+android:gravity="center_horizontal"
+android:textSize="28dp"
+android:textStyle="bold"
+android:textColor="#570838"
+app:colorSpace="150dp"
+app:colorSpeed="4dp"/>
+-->

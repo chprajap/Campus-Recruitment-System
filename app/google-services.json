@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "712899473424-4o773qj54bj1jp80rpdfa5motj9j4t7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chetan.campusrecruitmentsystem",
+            "certificate_hash": "0d76a55c320c277516537cc407c2d84942844743"
+          }
+        },
+        {
           "client_id": "712899473424-kimmu11j05n526e2gt14bsbmqink5arh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
