@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.hanks:htextview-fall-0.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/htextview-fall-0.1.2.aar/b57f9b7b9deeb287a8f99dd1f75d8de7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/htextview-fall-0.1.2.aar/b57f9b7b9deeb287a8f99dd1f75d8de7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hanks/htextview-fall/0.1.2/dbbf0449b7340a85bbae9c36dd49032776a6caf7/htextview-fall-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

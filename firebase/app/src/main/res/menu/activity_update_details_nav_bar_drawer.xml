@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/student_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/apply_for_jobs"
+            android:title="Apply For jobs" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/view_job_status"
+            android:title="View Job Status" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/search_for_jobs"
+            android:title="Search Jobs" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/ic_update_black_24dp"
+            android:title="Update Details" />
+
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@mipmap/password"
+            android:title="Change Password"/>
+    </group>
+
+</menu>

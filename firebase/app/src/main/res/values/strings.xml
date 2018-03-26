@@ -1,0 +1,77 @@
+<resources>
+    <string-array name="signup_spinner_id">
+
+        <item>Admin</item>
+
+        <item>Student</item>
+
+        <item>Company</item>
+
+    </string-array>
+
+    <string-array name="department_spinner">
+
+        <item>CSE</item>
+
+        <item>IT</item>
+
+        <item>ME</item>
+
+        <item>ECE</item>
+
+        <item>EEE</item>
+
+        <item>META</item>
+
+        <item>MINING</item>
+
+    </string-array>
+
+    <string-array name="year_spinner">
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string name="app_name">Campus Recruitment System</string>
+    <string name="projectName">Campus Recruitment System</string>
+    <string name="createAccount">Create New Account</string>
+    <string name="userFullName">Name</string>
+    <string name="userName">Username</string>
+    <string name="userId">UserId</string>
+    <string name="userEmailId">EmailId</string>
+    <string name="userContactNo">ContactNo</string>
+    <string name="userPassword">Password</string>
+    <string name="userConfirmPassword">Confirm Password</string>
+    <string name="SignInButton">Sign In</string>
+    <string name="title_activity_nav_bar">NavBarActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_apply_for_jobs_nav_bar">ApplyForJobsNavBar</string>
+    <string name="title_activity_view_job_status_nav_bar">ViewJobStatusNavBar</string>
+    <string name="title_activity_search_jobs_nav_bar">SearchJobsNavBar</string>
+    <string name="title_activity_change_password_nav_bar">ChangePasswordNavBar</string>
+    <string name="title_activity_update_details_nav_bar">UpdateDetailsNavBar</string>
+    <string name="title_activity_company_update_details_nav_bar">CompanyUpdateDetailsNavBar</string>
+    <string name="title_activity_company_nav_bar">CompanyNavBar</string>
+    <string name="title_activity_post_jobs">PostJobs</string>
+    <string name="title_activity_view_student_application_company_nav_bar">
+        ViewStudentApplicationCompanyNavBar
+    </string>
+    <string name="title_activity_company_change_password_nav_bar">CompanyChangePasswordNavBar
+    </string>
+    <string name="title_activity_admin_change_password_nav_bar">AdminChangePasswordNavBar</string>
+    <string name="title_activity_admin_nav_bar">AdminNavBarActivity</string>
+    <string name="title_activity_admin_update_details">AdminUpdateDetails</string>
+    <string name="title_activity_manage_student">ManageStudentActivity</string>
+    <string name="title_activity_manage_company">ManageCompany</string>
+</resources>
