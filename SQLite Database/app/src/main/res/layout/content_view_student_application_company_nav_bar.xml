@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chetan.campusrecruitmentsystem.ViewStudentApplicationCompanyNavBar"
+    tools:showIn="@layout/app_bar_view_student_application_company_nav_bar"
+    android:background="@drawable/background">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/view_student_application_company_scroll_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/view_student_application_company_linear_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:id="@+id/student_name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Student's Name"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/student_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job's Title"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_jobId_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job's' Id"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_job_type_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job's Type"
+                    android:textSize="20sp"/>
+
+
+                <TextView
+                    android:id="@+id/student_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: Student's Email"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_contact_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No: Student's Contact No"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_address_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: Student's Address"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_grade_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grade: Student's grade"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/student_skill_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills: Student's Skills"
+                    android:textSize="20sp"/>
+-->
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>
