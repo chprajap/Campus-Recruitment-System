@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/admin_help_id"
+
+    android:background="@drawable/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text5"
+        android:padding="20dp"
+        android:text="Welcome to Admin Help"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text"
+        android:padding="20dp"
+        android:text="1.Only one admin can be there in campus recruitment system."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text1"
+        android:padding="20dp"
+        android:text="2.Admin can manage Students in campus recruitment system."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text2"
+        android:padding="20dp"
+        android:text="3.Admin can manage Companies in campus recruitment system."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text3"
+        android:padding="20dp"
+        android:text="4.Admin can view all the details of each student and control them."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text4"
+        android:padding="20dp"
+        android:text="5.Admin can view all the details of each company and control them."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text6"
+        android:padding="20dp"
+        android:text="6.Manage Student can manage the student by Viewing all Students."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text9"
+        android:padding="20dp"
+        android:text="7.Manage Company can manage companies by viewing all companies."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text7"
+        android:padding="20dp"
+        android:text="8.Update Details can update the admin details."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text8"
+        android:padding="20dp"
+        android:text="9.Change Password will provide an interace to change password."/>
+</LinearLayout>
+</ScrollView>

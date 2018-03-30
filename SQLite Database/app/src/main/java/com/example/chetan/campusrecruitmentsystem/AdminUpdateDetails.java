@@ -251,6 +251,13 @@ public class AdminUpdateDetails extends AppCompatActivity
             finish();
             return true;
         }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),adminHelp.class));
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

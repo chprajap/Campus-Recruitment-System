@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.chetan.campusrecruitmentsystem.studentHelp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_help_text5"
+        android:padding="20dp"
+        android:text="Welcome to Student Help"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text"
+        android:padding="20dp"
+        android:text="1.Student is one user of campus recruitment system."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text1"
+        android:padding="20dp"
+        android:text="2.Student emailId must be unique."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text2"
+        android:padding="20dp"
+        android:text="3.Navigation Bar is provided."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text3"
+        android:padding="20dp"
+        android:text="4.Home takes you to the Main home page where Details of current logged in Student is displayed."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text4"
+        android:padding="20dp"
+        android:text="5.Apply For Jobs provides a form which student can fill to apply for job."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text5"
+        android:padding="20dp"
+        android:text="6.View Job Status shows you a status whether student is selected or not."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text6"
+        android:padding="20dp"
+        android:text="7.Search Jobs shows you all the jobs posted by various Companies."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text7"
+        android:padding="20dp"
+        android:text="8.Update Details can update the student details."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_help_text8"
+        android:padding="20dp"
+        android:text="9.Change Password will provide an interace to change password."/>
+
+    </LinearLayout>
+
+</ScrollView>

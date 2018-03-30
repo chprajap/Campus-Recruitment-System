@@ -46,113 +46,141 @@ public class ManageCompany extends AppCompatActivity
         for(int i=0; i<companyList.size();i++)
         {
             CompanyContact c = companyList.get(i);
+/*
             Log.v("Company Name",c.getName());
             Log.v("Job Name",c.getJobName1());
+*/
             TextView textView = new TextView(ManageCompany.this);
-            textView.setText("Company Name: "+c.getName());
+            textView.setTextSize(18);
+            textView.setText("* * * * * * * * * Company No: "+(i+1)+"* * * * * * * * *\n\n"+"Company Name: "+c.getName());
             linearLayout.addView(textView);
 
             TextView textView1 = new TextView(ManageCompany.this);
+            textView1.setTextSize(18);
             textView1.setText("Company UserName: "+c.getUname());
             linearLayout.addView(textView1);
 
             TextView textView2 = new TextView(ManageCompany.this);
+            textView2.setTextSize(18);
             textView2.setText("Company Id: "+c.getUid());
             linearLayout.addView(textView2);
 
             TextView textView3 = new TextView(ManageCompany.this);
+            textView3.setTextSize(18);
             textView3.setText("Company EmailId: "+c.getEmailId());
             linearLayout.addView(textView3);
 
             TextView textView4 = new TextView(ManageCompany.this);
+            textView4.setTextSize(18);
             textView4.setText("Company ContactNo: "+c.getContactNo());
             linearLayout.addView(textView4);
 
             TextView textView5 = new TextView(ManageCompany.this);
+            textView5.setTextSize(18);
             textView5.setText("Company Address: "+c.getAddress());
             linearLayout.addView(textView5);
 
             TextView textView6 = new TextView(ManageCompany.this);
-            textView6.setText("Company Rank: "+c.getRank());
+            textView6.setTextSize(18);
+            textView6.setText("Company Rank: "+c.getRank() +"\n==================================\n");
             linearLayout.addView(textView6);
+
 
 
             if(c.getJobName1()!=null)
             {
 
                 TextView textViewc = new TextView(ManageCompany.this);
-                textViewc.setText("Company JobName1: "+c.getJobName1());
+                textViewc.setText("Company JobName1:"+c.getJobName1());
+                textViewc.setTextSize(16);
                 linearLayout.addView(textViewc);
 
                 TextView textViewd = new TextView(ManageCompany.this);
+                textViewd.setTextSize(16);
                 textViewd.setText("Company JobId1: "+c.getJobId1());
                 linearLayout.addView(textViewd);
 
                 TextView textViewe = new TextView(ManageCompany.this);
+                textViewe.setTextSize(16);
                 textViewe.setText("Company JobType1: "+c.getJobType1());
                 linearLayout.addView(textViewe);
 
                 TextView textViewf = new TextView(ManageCompany.this);
-                textViewf.setText("Company JobSalary1: "+c.getSalary1());
+                textViewf.setTextSize(16);
+                textViewf.setText("Company JobSalary1: "+c.getSalary1()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textViewf);
 
                 if(c.getJobName2()!=null)
                 {
                     TextView textViewc1 = new TextView(ManageCompany.this);
+                    textViewc1.setTextSize(16);
                     textViewc1.setText("Company JobName2: "+c.getJobName2());
                     linearLayout.addView(textViewc1);
 
                     TextView textViewd1 = new TextView(ManageCompany.this);
+                    textViewd1.setTextSize(16);
                     textViewd1.setText("Company JobId2: "+c.getJobId2());
                     linearLayout.addView(textViewd1);
 
                     TextView textViewe1 = new TextView(ManageCompany.this);
+                    textViewe1.setTextSize(16);
                     textViewe1.setText("Company JobType2: "+c.getJobType2());
                     linearLayout.addView(textViewe1);
 
                     TextView textViewf1 = new TextView(ManageCompany.this);
-                    textViewf1.setText("Company JobSalary2: "+c.getSalary2());
+                    textViewf1.setTextSize(16);
+                    textViewf1.setText("Company JobSalary2: "+c.getSalary2()+"\n-------------------------------------------------------------\n");
                     linearLayout.addView(textViewf1);
 
                     if(c.getJobName3()!=null)
                     {
                         TextView textViewc3 = new TextView(ManageCompany.this);
+                        textViewc3.setTextSize(16);
                         textViewc3.setText("Company JobName3: "+c.getJobName3());
                         linearLayout.addView(textViewc3);
 
                         TextView textViewd3 = new TextView(ManageCompany.this);
+                        textViewd3.setTextSize(16);
                         textViewd3.setText("Company JobId3: "+c.getJobId3());
                         linearLayout.addView(textViewd3);
 
                         TextView textViewe3 = new TextView(ManageCompany.this);
+                        textViewe3.setTextSize(16);
                         textViewe3.setText("Company JobType3: "+c.getJobType3());
                         linearLayout.addView(textViewe3);
 
                         TextView textViewf3 = new TextView(ManageCompany.this);
-                        textViewf3.setText("Company JobSalary3: "+c.getSalary3());
+                        textViewf3.setTextSize(16);
+                        textViewf3.setText("Company JobSalary3: "+c.getSalary3()+"\n-------------------------------------------------------------\n");
                         linearLayout.addView(textViewf3);
                         if(c.getJobName4()!=null)
                         {
                             TextView textViewc4 = new TextView(ManageCompany.this);
+                            textViewc4.setTextSize(16);
                             textViewc4.setText("Company JobName4: "+c.getJobName4());
                             linearLayout.addView(textViewc4);
 
                             TextView textViewd4 = new TextView(ManageCompany.this);
+                            textViewd4.setTextSize(16);
                             textViewd4.setText("Company JobId4: "+c.getJobId4());
                             linearLayout.addView(textViewd4);
 
                             TextView textViewe4 = new TextView(ManageCompany.this);
+                            textViewe4.setTextSize(16);
                             textViewe4.setText("Company JobType4: "+c.getJobType4());
                             linearLayout.addView(textViewe4);
 
                             TextView textViewf4 = new TextView(ManageCompany.this);
-                            textViewf4.setText("Company JobSalary4: "+c.getSalary4());
+                            textViewf4.setTextSize(16);
+                            textViewf4.setText("Company JobSalary4: "+c.getSalary4()+"\n-------------------------------------------------------------\n");
                             linearLayout.addView(textViewf4);
                         }
                     }
 
                 }
             }
+
+
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -206,6 +234,12 @@ public class ManageCompany extends AppCompatActivity
     //        mAuth.signOut();
             startActivity(new Intent(getApplicationContext(), loginAdmin.class));
             finish();
+            return true;
+        }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),adminHelp.class));
             return true;
         }
 

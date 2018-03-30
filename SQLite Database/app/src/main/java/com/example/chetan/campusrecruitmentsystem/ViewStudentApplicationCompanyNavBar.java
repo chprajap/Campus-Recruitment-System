@@ -48,51 +48,57 @@ public class ViewStudentApplicationCompanyNavBar extends AppCompatActivity
         for(int i=0; i<studentList.size();i++)
         {
             StudentContact c = studentList.get(i);
-            Log.v("Student Name",c.getName());
-            Log.v("Job Name",c.getJobName1());
            /* TextView textView = new TextView(ViewStudentApplicationCompanyNavBar.this);
             textView.setText(c.getCompanyEmail1()+c.getCompanyEmail2()+c.getCompanyEmail3()+c.getCompanyEmail4());
             linearLayout.addView(textView);*/
             if(c.getCompanyEmail1()!=null && c.getCompanyEmail1().equals(emailIdFromOtherClass))
             {
                 TextView textView1 = new TextView(ViewStudentApplicationCompanyNavBar.this);
-                textView1.setText("Student Name: "+c.getName());
+                textView1.setTextSize(18);
+                textView1.setText(" * * * * * Student Name * * * * *\n\n"+"Student Name: "+c.getName());
                 linearLayout.addView(textView1);
 
                 TextView textView2 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView2.setTextSize(18);
                 textView2.setText("Job Name: "+c.getJobName1());
                 linearLayout.addView(textView2);
 
                 TextView textView3 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView3.setTextSize(18);
                 textView3.setText("Job Id: "+c.getJobId1());
                 linearLayout.addView(textView3);
 
                 TextView textView4 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView4.setTextSize(18);
                 textView4.setText("Job Type: "+c.getJobType1());
                 linearLayout.addView(textView4);
 
                 TextView textView5 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView5.setTextSize(18);
                 textView5.setText("Student EmailId: "+c.getEmailId());
                 linearLayout.addView(textView5);
 
                 TextView textView6 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView6.setTextSize(18);
                 textView6.setText("Student ContactNo: "+c.getContactNo());
                 linearLayout.addView(textView6);
 
                 TextView textView7 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView7.setTextSize(18);
                 textView7.setText("Student Grade: "+c.getGrade());
                 linearLayout.addView(textView7);
 
                 TextView textView8 = new TextView(ViewStudentApplicationCompanyNavBar.this);
-                textView8.setText("Student Skill: "+c.getSkill());
+                textView8.setTextSize(18);
+                textView8.setText("Student Skill: "+c.getSkill()+"\n==================================\n");
                 linearLayout.addView(textView8);
 
             }
             /*TextView timepass = new TextView(ViewStudentApplicationCompanyNavBar.this);
             timepass.setText(emailIdFromOtherClass);
             linearLayout.addView(timepass);*/
-            Log.v("email",emailIdFromOtherClass);
-            Log.v("email1",c.getCompanyEmail2());
+/*            Log.v("email",emailIdFromOtherClass);
+            Log.v("email1",c.getCompanyEmail2());*/
             if(c.getCompanyEmail2()!=null && (c.getCompanyEmail2()).equals(emailIdFromOtherClass))
             {
                 /*TextView timepass1 = new TextView(ViewStudentApplicationCompanyNavBar.this);
@@ -100,35 +106,43 @@ public class ViewStudentApplicationCompanyNavBar extends AppCompatActivity
                 linearLayout.addView(timepass1);*/
 
                 TextView textView9 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView9.setTextSize(16);
                 textView9.setText("Student Name: "+c.getName());
                 linearLayout.addView(textView9);
 
                 TextView textView10 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView10.setTextSize(16);
                 textView10.setText("Job Name: "+c.getJobName2());
                 linearLayout.addView(textView10);
 
                 TextView textView11 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView11.setTextSize(16);
                 textView11.setText("Job Id: "+c.getJobId2());
                 linearLayout.addView(textView11);
 
                 TextView textView12 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView12.setTextSize(16);
                 textView12.setText("Job Type: "+c.getJobType2());
                 linearLayout.addView(textView12);
 
                 TextView textView13 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView13.setTextSize(16);
                 textView13.setText("Student EmailId: "+c.getEmailId());
                 linearLayout.addView(textView13);
 
                 TextView textView14 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView14.setTextSize(16);
                 textView14.setText("Student ContactNo: "+c.getContactNo());
                 linearLayout.addView(textView14);
 
                 TextView textView15 = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView15.setTextSize(16);
                 textView15.setText("Student Grade: "+c.getGrade());
                 linearLayout.addView(textView15);
 
                 TextView textView16 = new TextView(ViewStudentApplicationCompanyNavBar.this);
-                textView16.setText("Student Skill: "+c.getSkill());
+                textView16.setTextSize(16);
+                textView16.setText("Student Skill: "+c.getSkill()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView16);
 
             }
@@ -136,35 +150,43 @@ public class ViewStudentApplicationCompanyNavBar extends AppCompatActivity
             if(c.getCompanyEmail3()!=null && c.getCompanyEmail3().equals(emailIdFromOtherClass))
             {
                 TextView textView1a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView1a.setTextSize(16);
                 textView1a.setText("Student Name: "+c.getName());
                 linearLayout.addView(textView1a);
 
                 TextView textView2a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView2a.setTextSize(16);
                 textView2a.setText("Job Name: "+c.getJobName3());
                 linearLayout.addView(textView2a);
 
                 TextView textView3a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView3a.setTextSize(16);
                 textView3a.setText("Job Id: "+c.getJobId3());
                 linearLayout.addView(textView3a);
 
                 TextView textView4a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView4a.setTextSize(16);
                 textView4a.setText("Job Type: "+c.getJobType3());
                 linearLayout.addView(textView4a);
 
                 TextView textView5a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView5a.setTextSize(16);
                 textView5a.setText("Student EmailId: "+c.getEmailId());
                 linearLayout.addView(textView5a);
 
                 TextView textView6a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView6a.setTextSize(16);
                 textView6a.setText("Student ContactNo: "+c.getContactNo());
                 linearLayout.addView(textView6a);
 
                 TextView textView7a = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView7a.setTextSize(16);
                 textView7a.setText("Student Grade: "+c.getGrade());
                 linearLayout.addView(textView7a);
 
                 TextView textView8a = new TextView(ViewStudentApplicationCompanyNavBar.this);
-                textView8a.setText("Student Skill: "+c.getSkill());
+                textView8a.setTextSize(16);
+                textView8a.setText("Student Skill: "+c.getSkill()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView8a);
 
             }
@@ -172,35 +194,43 @@ public class ViewStudentApplicationCompanyNavBar extends AppCompatActivity
             if(c.getCompanyEmail4()!=null && c.getCompanyEmail4().equals(emailIdFromOtherClass))
             {
                 TextView textView1b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView1b.setTextSize(16);
                 textView1b.setText("Student Name: "+c.getName());
                 linearLayout.addView(textView1b);
 
                 TextView textView2b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView2b.setTextSize(16);
                 textView2b.setText("Job Name: "+c.getJobName4());
                 linearLayout.addView(textView2b);
 
                 TextView textView3b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView3b.setTextSize(16);
                 textView3b.setText("Job Id: "+c.getJobId4());
                 linearLayout.addView(textView3b);
 
                 TextView textView4b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView4b.setTextSize(16);
                 textView4b.setText("Job Type: "+c.getJobType4());
                 linearLayout.addView(textView4b);
 
                 TextView textView5b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView5b.setTextSize(16);
                 textView5b.setText("Student EmailId: "+c.getEmailId());
                 linearLayout.addView(textView5b);
 
                 TextView textView6b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView6b.setTextSize(16);
                 textView6b.setText("Student ContactNo: "+c.getContactNo());
                 linearLayout.addView(textView6b);
 
                 TextView textView7b = new TextView(ViewStudentApplicationCompanyNavBar.this);
+                textView7b.setTextSize(16);
                 textView7b.setText("Student Grade: "+c.getGrade());
                 linearLayout.addView(textView7b);
 
                 TextView textView8b = new TextView(ViewStudentApplicationCompanyNavBar.this);
-                textView8b.setText("Student Skill: "+c.getSkill());
+                textView8b.setTextSize(16);
+                textView8b.setText("Student Skill: "+c.getSkill()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView8b);
 
             }
@@ -260,7 +290,11 @@ public class ViewStudentApplicationCompanyNavBar extends AppCompatActivity
             finish();
             return true;
         }
-
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),companyHelp.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -35,63 +35,95 @@
                     android:layout_marginBottom="5dp"
                     />
 
-                <EditText
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="@string/userFullName"
-                    android:id="@+id/updateName"
-                    android:inputType="textPersonName"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/updateName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="@string/userName"
-                    android:id="@+id/updateUsername"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:id="@+id/updateUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="@string/userId"
-                    android:id="@+id/updateUserId"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="User ID"
+                        android:inputType="textPersonName"
+                        android:id="@+id/updateUserId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="@string/userEmailId"
-                    android:id="@+id/updateEmailId"
-                    android:inputType="textEmailAddress"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Email ID"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/updateEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="ContactNo"
-                    android:id="@+id/updateContactNo"
-                    android:inputType="phone"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Contact No."
+                        android:inputType="phone"
+                        android:id="@+id/updateContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Address"
-                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="5dp"
-                    android:id="@+id/updateAddress"
-                    android:inputType="textPostalAddress"/>
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Address"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/updateAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

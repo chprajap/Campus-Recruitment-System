@@ -485,6 +485,12 @@ public class UpdateDetailsNavBar extends AppCompatActivity
             return true;
         }
 
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),studentHelp.class));
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

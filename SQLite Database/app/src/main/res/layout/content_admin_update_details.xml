@@ -35,55 +35,79 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp" />
 
-                <EditText
-                    android:id="@+id/AdminFullName"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Full Name"
-                    android:inputType="textPersonName"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/AdminId"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Full Name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/AdminFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Admin ID"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Admin ID"
+                        android:id="@+id/AdminId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Email ID"
-                    android:id="@+id/AdminEmailId"
-                    android:inputType="textEmailAddress"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Email ID"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/AdminEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Contact No."
-                    android:id="@+id/AdminContactNo"
-                    android:inputType="phone"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Contact No."
+                        android:inputType="phone"
+                        android:id="@+id/AdminContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Address"
-                    android:id="@+id/AdminAddress"
-                    android:inputType="textPostalAddress"/>
+                    android:layout_marginBottom="5dp">
 
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Address"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/AdminAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
 
                 <RadioGroup
                     android:layout_width="wrap_content"

@@ -200,6 +200,12 @@ public class AdminChangePasswordNavBar extends AppCompatActivity
             return true;
         }
 
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),adminHelp.class));
+            return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

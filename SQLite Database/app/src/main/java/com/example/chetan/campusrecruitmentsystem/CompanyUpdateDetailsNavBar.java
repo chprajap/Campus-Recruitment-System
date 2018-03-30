@@ -260,6 +260,11 @@ public class CompanyUpdateDetailsNavBar extends AppCompatActivity
             finish();
             return true;
         }
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),companyHelp.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

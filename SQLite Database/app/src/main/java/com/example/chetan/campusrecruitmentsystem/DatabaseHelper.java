@@ -405,6 +405,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 c.setId(Integer.parseInt(cursor.getString(0)));
                 c.setName(cursor.getString(1));
+                c.setUname(cursor.getString(2));
+                c.setUid(cursor.getString(3));
                 c.setEmailId(cursor.getString(4));
                 c.setContactNo(cursor.getString(5));
                 c.setAddress(cursor.getString(7));

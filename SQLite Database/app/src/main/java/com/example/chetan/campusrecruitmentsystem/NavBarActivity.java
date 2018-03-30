@@ -79,8 +79,9 @@ public class NavBarActivity extends AppCompatActivity
         justTry+=list.get(9);
         hi.setText(justTry);
 */
-        String justTry = "Full Name: " + list.get(1)+ "\nUserName: " + list.get(2)+ "\nUser Id: " + list.get(3)+ "\nEmail Id: " + list.get(4)+ "\nContact No: " + list.get(5)+ "\nAddress: " + list.get(7)+ "\nHSC: " + list.get(8)+ "\nSSC: " + list.get(9);
+        String justTry = " * * * * * Student Information * * * * *\n\n"+"Full Name: " + list.get(1)+ "\nUserName: " + list.get(2)+ "\nUser Id: " + list.get(3)+ "\nEmail Id: " + list.get(4)+ "\nContact No: " + list.get(5)+ "\nAddress: " + list.get(7)+ "\nHSC: " + list.get(8)+ "\nSSC: " + list.get(9);
         //view.setText("hello crp");
+        hi.setTextSize(18);
         hi.setText(justTry);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -135,6 +136,12 @@ public class NavBarActivity extends AppCompatActivity
         //    mAuth.signOut();
             startActivity(new Intent(NavBarActivity.this, login.class));
             finish();
+            return true;
+        }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),studentHelp.class));
             return true;
         }
 

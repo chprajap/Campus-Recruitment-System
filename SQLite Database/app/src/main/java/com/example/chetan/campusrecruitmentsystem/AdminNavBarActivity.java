@@ -63,8 +63,9 @@ public class AdminNavBarActivity extends AppCompatActivity
         ArrayList<String> list = helper.searchEmail(emailIdFromOtherClass);
         Log.v("hi",list.get(1));
         TextView hi = (TextView) findViewById(R.id.hi_admin);
-        String justTry = "Admin Name: " + list.get(1)+ "\nAdmin Id: " + list.get(3)+ "\nEmail Id: " + list.get(4)+ "\nContact No: " + list.get(5)+ "\nAddress: " + list.get(7);
+        String justTry = " * * * * * Admin Information * * * * *\n\n"+"  Admin Name: " + list.get(1)+ "\n  Admin Id: " + list.get(3)+ "\n  Email Id: " + list.get(4)+ "\n  Contact No: " + list.get(5)+ "\n  Address: " + list.get(7);
         //view.setText("hello crp");
+        hi.setTextSize(18);
         hi.setText(justTry);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -117,6 +118,12 @@ public class AdminNavBarActivity extends AppCompatActivity
           //  mAuth.signOut();
             startActivity(new Intent(getApplicationContext(), loginAdmin.class));
             finish();
+            return true;
+        }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),adminHelp.class));
             return true;
         }
 

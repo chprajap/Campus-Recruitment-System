@@ -48,137 +48,167 @@ public class ManageStudentActivity extends AppCompatActivity
         for(int i=0; i<studentList.size();i++)
         {
             StudentContact c = studentList.get(i);
-            Log.v("Student Name",c.getName());
-            Log.v("Job Name",c.getJobName1());
+/*            Log.v("Student Name",c.getName());
+            Log.v("Job Name",c.getJobName1());*/
            /* TextView textView = new TextView(ViewStudentApplicationCompanyNavBar.this);
             textView.setText(c.getCompanyEmail1()+c.getCompanyEmail2()+c.getCompanyEmail3()+c.getCompanyEmail4());
             linearLayout.addView(textView);*/
             TextView textView = new TextView(ManageStudentActivity.this);
-            textView.setText("Student Name: "+c.getName());
+            textView.setTextSize(18);
+            textView.setText("* * * * * * * * * Student No: "+(i+1)+"* * * * * * * * *\n\n"+"Student Name: "+c.getName());
             linearLayout.addView(textView);
 
             TextView textView1 = new TextView(ManageStudentActivity.this);
+            textView1.setTextSize(18);
             textView1.setText("Student UserName: "+c.getUname());
             linearLayout.addView(textView1);
 
             TextView textView2 = new TextView(ManageStudentActivity.this);
+            textView2.setTextSize(18);
             textView2.setText("Student Id: "+c.getUid());
             linearLayout.addView(textView2);
 
             TextView textView3 = new TextView(ManageStudentActivity.this);
+            textView3.setTextSize(18);
             textView3.setText("Student EmailId: "+c.getEmailId());
             linearLayout.addView(textView3);
 
             TextView textView4 = new TextView(ManageStudentActivity.this);
+            textView4.setTextSize(18);
             textView4.setText("Student ContactNo: "+c.getContactNo());
             linearLayout.addView(textView4);
 
             TextView textView5 = new TextView(ManageStudentActivity.this);
+            textView5.setTextSize(18);
             textView5.setText("Student Address: "+c.getAddress());
             linearLayout.addView(textView5);
 
             TextView textView6 = new TextView(ManageStudentActivity.this);
+            textView6.setTextSize(18);
             textView6.setText("Student SSC Marks: "+c.getSsc());
             linearLayout.addView(textView6);
 
             TextView textView7 = new TextView(ManageStudentActivity.this);
-            textView7.setText("Student HSC Marks: "+c.getHsc());
+            textView7.setTextSize(18);
+            textView7.setText("Student HSC Marks: "+c.getHsc()+"\n==================================\n");
             linearLayout.addView(textView7);
 
             if(c.getGrade()!=null)
             {
                 TextView textView8 = new TextView(ManageStudentActivity.this);
+                textView8.setTextSize(16);
                 textView8.setText("Student Grade: "+c.getGrade());
                 linearLayout.addView(textView8);
 
                 TextView textView9 = new TextView(ManageStudentActivity.this);
+                textView9.setTextSize(16);
                 textView9.setText("Student Skills: "+c.getSkill());
                 linearLayout.addView(textView9);
 
                 TextView textViewa = new TextView(ManageStudentActivity.this);
+                textViewa.setTextSize(16);
                 textViewa.setText("Student CompanyName1: "+c.getCompanyName1());
                 linearLayout.addView(textViewa);
 
                 TextView textViewb = new TextView(ManageStudentActivity.this);
+                textViewb.setTextSize(16);
                 textViewb.setText("Student CompanyEmail1: "+c.getCompanyEmail1());
                 linearLayout.addView(textViewb);
 
                 TextView textViewc = new TextView(ManageStudentActivity.this);
+                textViewc.setTextSize(16);
                 textViewc.setText("Student JobName1: "+c.getJobName1());
                 linearLayout.addView(textViewc);
 
                 TextView textViewd = new TextView(ManageStudentActivity.this);
+                textViewd.setTextSize(16);
                 textViewd.setText("Student JobId1: "+c.getJobId1());
                 linearLayout.addView(textViewd);
 
                 TextView textViewe = new TextView(ManageStudentActivity.this);
-                textViewe.setText("Student JobType1: "+c.getJobType1());
+                textViewe.setTextSize(16);
+                textViewe.setText("Student JobType1: "+c.getJobType1()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textViewe);
 
                 if(c.getCompanyName2()!=null)
                 {
                     TextView textViewa1 = new TextView(ManageStudentActivity.this);
+                    textViewa1.setTextSize(16);
                     textViewa1.setText("Student CompanyName2: "+c.getCompanyName2());
                     linearLayout.addView(textViewa1);
 
                     TextView textViewb1 = new TextView(ManageStudentActivity.this);
+                    textViewb1.setTextSize(16);
                     textViewb1.setText("Student CompanyEmail2: "+c.getCompanyEmail2());
                     linearLayout.addView(textViewb1);
 
                     TextView textViewc1 = new TextView(ManageStudentActivity.this);
+                    textViewc1.setTextSize(16);
                     textViewc1.setText("Student JobName2: "+c.getJobName2());
                     linearLayout.addView(textViewc1);
 
                     TextView textViewd1 = new TextView(ManageStudentActivity.this);
+                    textViewd1.setTextSize(16);
                     textViewd1.setText("Student JobId2: "+c.getJobId2());
                     linearLayout.addView(textViewd1);
 
                     TextView textViewe1 = new TextView(ManageStudentActivity.this);
-                    textViewe1.setText("Student JobType2: "+c.getJobType2());
+                    textViewe1.setTextSize(16);
+                    textViewe1.setText("Student JobType2: "+c.getJobType2()+"\n-------------------------------------------------------------\n");
                     linearLayout.addView(textViewe1);
 
                     if(c.getCompanyName3()!=null)
                     {
                         TextView textViewa3 = new TextView(ManageStudentActivity.this);
+                        textViewa3.setTextSize(16);
                         textViewa3.setText("Student CompanyName3: "+c.getCompanyName3());
                         linearLayout.addView(textViewa3);
 
                         TextView textViewb3 = new TextView(ManageStudentActivity.this);
+                        textViewb3.setTextSize(16);
                         textViewb3.setText("Student CompanyEmail13: "+c.getCompanyEmail3());
                         linearLayout.addView(textViewb3);
 
                         TextView textViewc3 = new TextView(ManageStudentActivity.this);
+                        textViewc3.setTextSize(16);
                         textViewc3.setText("Student JobName3: "+c.getJobName3());
                         linearLayout.addView(textViewc3);
 
                         TextView textViewd3 = new TextView(ManageStudentActivity.this);
+                        textViewd3.setTextSize(16);
                         textViewd3.setText("Student JobId3: "+c.getJobId3());
                         linearLayout.addView(textViewd3);
 
                         TextView textViewe3 = new TextView(ManageStudentActivity.this);
-                        textViewe3.setText("Student JobType3: "+c.getJobType3());
+                        textViewe3.setTextSize(16);
+                        textViewe3.setText("Student JobType3: "+c.getJobType3()+"\n-------------------------------------------------------------\n");
                         linearLayout.addView(textViewe3);
 
                         if(c.getCompanyName4()!=null)
                         {
                             TextView textViewa4 = new TextView(ManageStudentActivity.this);
+                            textViewa4.setTextSize(16);
                             textViewa4.setText("Student CompanyName4: "+c.getCompanyName4());
                             linearLayout.addView(textViewa4);
 
                             TextView textViewb4 = new TextView(ManageStudentActivity.this);
+                            textViewb4.setTextSize(16);
                             textViewb4.setText("Student CompanyEmail4: "+c.getCompanyEmail4());
                             linearLayout.addView(textViewb4);
 
                             TextView textViewc4 = new TextView(ManageStudentActivity.this);
+                            textViewc4.setTextSize(16);
                             textViewc4.setText("Student JobName4: "+c.getJobName4());
                             linearLayout.addView(textViewc4);
 
                             TextView textViewd4 = new TextView(ManageStudentActivity.this);
+                            textViewd4.setTextSize(16);
                             textViewd4.setText("Student JobId4: "+c.getJobId4());
                             linearLayout.addView(textViewd4);
 
                             TextView textViewe4 = new TextView(ManageStudentActivity.this);
-                            textViewe4.setText("Student JobType4: "+c.getJobType4());
+                            textViewe4.setTextSize(16);
+                            textViewe4.setText("Student JobType4: "+c.getJobType4()+"\n-------------------------------------------------------------\n");
                             linearLayout.addView(textViewe4);
 
                         }
@@ -240,6 +270,12 @@ public class ManageStudentActivity extends AppCompatActivity
   //          mAuth.signOut();
             startActivity(new Intent(getApplicationContext(), loginAdmin.class));
             finish();
+            return true;
+        }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),adminHelp.class));
             return true;
         }
 

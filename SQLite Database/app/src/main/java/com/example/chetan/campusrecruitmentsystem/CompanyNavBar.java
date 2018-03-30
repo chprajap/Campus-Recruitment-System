@@ -59,8 +59,9 @@ public class CompanyNavBar extends AppCompatActivity
         DatabaseHelperCompany helper = new DatabaseHelperCompany(CompanyNavBar.this);
         ArrayList<String> list = helper.searchEmail(emailIdFromOtherClass);
         TextView hi = (TextView) findViewById(R.id.hi_company);
-        String justTry = "Company Name: " + list.get(1)+ "\nCompany Id: " + list.get(3)+ "\nRank: " + list.get(8)+ "\nEmail Id: " + list.get(4)+ "\nContact No: " + list.get(5)+ "\nAddress: " + list.get(7);
+        String justTry = " * * * * * Student Information * * * * *\n\n"+"Company Name: " + list.get(1)+ "\nCompany Id: " + list.get(3)+ "\nRank: " + list.get(8)+ "\nEmail Id: " + list.get(4)+ "\nContact No: " + list.get(5)+ "\nAddress: " + list.get(7);
         //view.setText("hello crp");
+        hi.setTextSize(18);
         hi.setText(justTry);
 
 
@@ -115,6 +116,11 @@ public class CompanyNavBar extends AppCompatActivity
 //            mAuth.signOut();
             startActivity(new Intent(getApplicationContext(), loginCompany.class));
             finish();
+            return true;
+        }
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),companyHelp.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

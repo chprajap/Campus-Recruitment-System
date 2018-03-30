@@ -16,8 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".login" />
         <activity android:name=".doSignUp" />
         <activity android:name=".StudentMainActivity" />
@@ -87,6 +86,9 @@
             android:name=".ManageCompany"
             android:label="@string/title_activity_manage_company"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".adminHelp" />
+        <activity android:name=".studentHelp" />
+        <activity android:name=".companyHelp"></activity>
     </application>
 
 </manifest>

@@ -15,8 +15,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.List;
 
 public class ViewJobStatusNavBar extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +35,19 @@ public class ViewJobStatusNavBar extends AppCompatActivity
       //  mAuth = FirebaseAuth.getInstance();
 
         ScrollView mscrollView = (ScrollView) findViewById(R.id.view_job_status_scroll_id);
+LinearLayout linearLayout = (LinearLayout) findViewById(R.id.view_job_status_layout_id);
+        DatabaseHelperCompany helperCompany = new DatabaseHelperCompany(ViewJobStatusNavBar.this);
+        List<CompanyContact> companyList = helperCompany.getAllCompany();
+
+
+        for(int i=0; i<companyList.size();i++)
+        {
+            CompanyContact c = companyList.get(i);
+            TextView textView = new TextView(ViewJobStatusNavBar.this);
+            textView.setTextSize(16);
+            textView.setText("\n"+c.getName()+": Not yet Selected");
+            linearLayout.addView(textView);
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -84,6 +100,12 @@ public class ViewJobStatusNavBar extends AppCompatActivity
             //mAuth.signOut();
             startActivity(new Intent(ViewJobStatusNavBar.this, login.class));
             finish();
+            return true;
+        }
+
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),studentHelp.class));
             return true;
         }
 

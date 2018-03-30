@@ -36,109 +36,176 @@
                     android:text="Applying for job's name"
                     android:textSize="30sp" />
 
-                <EditText
-                    android:id="@+id/student_name"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's name"
-                    android:inputType="text" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/student_email"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/student_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's email Id"
-                    android:inputType="textEmailAddress" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/student_contact"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Email ID"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/student_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's contact no."
-                    android:inputType="phone" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/student_grade"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Contact No."
+                        android:inputType="phone"
+                        android:id="@+id/student_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's grade" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/student_skill"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Grade"
+                        android:id="@+id/student_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's skill" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/student_address"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Skill"
+                        android:inputType="textPersonName"
+                        android:id="@+id/student_skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="student's address"
-                    android:inputType="textPostalAddress" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/job_company_name"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Student's Address"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/student_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Company Name" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/job_company_email_id"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Company Name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/job_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Company EmailId" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/job_title_id"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Company Emial ID"
+                        android:inputType="textPersonName"
+                        android:id="@+id/job_company_email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Job Title" />
+                    android:layout_marginBottom="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Job Title"
+                        android:inputType="textPersonName"
+                        android:id="@+id/job_title_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
 
 
-                <EditText
-                    android:id="@+id/job_id_search"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Job Id" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/job_type_id_search"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Job ID"
+                        android:inputType="textPersonName"
+                        android:id="@+id/job_id_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Job Type" />
+                    android:layout_marginBottom="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Job Type"
+                        android:inputType="textPersonName"
+                        android:id="@+id/job_type_id_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
 
                 <Button
                     android:id="@+id/apply_for_jobs_button_id"

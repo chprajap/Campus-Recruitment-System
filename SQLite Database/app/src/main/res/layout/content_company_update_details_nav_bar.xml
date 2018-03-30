@@ -35,65 +35,94 @@
                     android:layout_marginBottom="5dp"
                     />
 
-                <EditText
-                    android:id="@+id/updateNameCompany"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Company Name"
-                    android:inputType="textPersonName"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/updateUserIdCompany"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Company Name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/updateNameCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Comany ID" />
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/update_rank_id_company"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Company ID"
+                        android:id="@+id/updateUserIdCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Rank"
-                    android:inputType="number"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/updateEmailIdCompany"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Rank"
+                        android:inputType="number"
+                        android:id="@+id/update_rank_id_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Email ID"
-                    android:inputType="textEmailAddress"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/updateContactNoCompany"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Email ID"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/updateEmailIdCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="Contact No"
-                    android:inputType="phone"/>
+                    android:layout_marginBottom="5dp">
 
-                <EditText
-                    android:id="@+id/updateAddressCompany"
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Contact No"
+                        android:inputType="phone"
+                        android:id="@+id/updateContactNoCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Address"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:inputType="textPostalAddress"/>
+                    android:layout_marginBottom="5dp">
 
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="Address"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/updateAddressCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
 
                 <Button
                     android:layout_width="wrap_content"

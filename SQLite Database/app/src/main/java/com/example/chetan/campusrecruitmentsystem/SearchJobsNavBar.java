@@ -56,22 +56,27 @@ public class SearchJobsNavBar extends AppCompatActivity
             if(c.getJobName1()!=null)
             {
                 TextView textView1 = new TextView(SearchJobsNavBar.this);
-                textView1.setText("Job Title: "+c.getJobName1());
+                textView1.setTextSize(16);
+                textView1.setText(" * * * * * Company List * * * * *\n\n"+"Job Title: "+c.getJobName1());
                 linearLayout.addView(textView1);
                 TextView textView = new TextView(SearchJobsNavBar.this);
+                textView.setTextSize(16);
                 textView.setText("Company Name: "+c.getName());
                 linearLayout.addView(textView);
 
                 TextView textView2 = new TextView(SearchJobsNavBar.this);
+                textView2.setTextSize(16);
                 textView2.setText("Job Id: "+c.getJobId1());
                 linearLayout.addView(textView2);
 
                 TextView textView3 = new TextView(SearchJobsNavBar.this);
+                textView3.setTextSize(16);
                 textView3.setText("Job Type: "+c.getJobType1());
                 linearLayout.addView(textView3);
 
                 TextView textView4 = new TextView(SearchJobsNavBar.this);
-                textView4.setText("Salary: "+c.getSalary1());
+                textView4.setTextSize(16);
+                textView4.setText("Salary: "+c.getSalary1()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView4);
 
             }
@@ -79,22 +84,27 @@ public class SearchJobsNavBar extends AppCompatActivity
             if(c.getJobName2()!=null)
             {
                 TextView textView5 = new TextView(SearchJobsNavBar.this);
+                textView5.setTextSize(16);
                 textView5.setText("Job Title: "+c.getJobName2());
                 linearLayout.addView(textView5);
                 TextView textView6 = new TextView(SearchJobsNavBar.this);
+                textView6.setTextSize(16);
                 textView6.setText("Company Name: "+c.getName());
                 linearLayout.addView(textView6);
 
                 TextView textView7 = new TextView(SearchJobsNavBar.this);
+                textView7.setTextSize(16);
                 textView7.setText("Job Id: "+c.getJobId2());
                 linearLayout.addView(textView7);
 
                 TextView textView8 = new TextView(SearchJobsNavBar.this);
+                textView8.setTextSize(16);
                 textView8.setText("Job Type: "+c.getJobType2());
                 linearLayout.addView(textView8);
 
                 TextView textView9 = new TextView(SearchJobsNavBar.this);
-                textView9.setText("Salary: "+c.getSalary2());
+                textView9.setTextSize(16);
+                textView9.setText("Salary: "+c.getSalary2()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView9);
 
             }
@@ -102,22 +112,27 @@ public class SearchJobsNavBar extends AppCompatActivity
             if(c.getJobName3()!=null)
             {
                 TextView textView10 = new TextView(SearchJobsNavBar.this);
+                textView10.setTextSize(16);
                 textView10.setText("Job Title: "+c.getJobName3());
                 linearLayout.addView(textView10);
                 TextView textView11 = new TextView(SearchJobsNavBar.this);
+                textView11.setTextSize(16);
                 textView11.setText("Company Name: "+c.getName());
                 linearLayout.addView(textView11);
 
                 TextView textView12 = new TextView(SearchJobsNavBar.this);
+                textView12.setTextSize(16);
                 textView12.setText("Job Id: "+c.getJobId3());
                 linearLayout.addView(textView12);
 
                 TextView textView13 = new TextView(SearchJobsNavBar.this);
+                textView13.setTextSize(16);
                 textView13.setText("Job Type: "+c.getJobType3());
                 linearLayout.addView(textView13);
 
                 TextView textView14 = new TextView(SearchJobsNavBar.this);
-                textView14.setText("Salary: "+c.getSalary3());
+                textView14.setTextSize(16);
+                textView14.setText("Salary: "+c.getSalary3()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView14);
 
             }
@@ -125,22 +140,27 @@ public class SearchJobsNavBar extends AppCompatActivity
             if(c.getJobName4()!=null)
             {
                 TextView textView15 = new TextView(SearchJobsNavBar.this);
+                textView15.setTextSize(16);
                 textView15.setText("Job Title: "+c.getJobName4());
                 linearLayout.addView(textView15);
                 TextView textView16 = new TextView(SearchJobsNavBar.this);
+                textView16.setTextSize(16);
                 textView16.setText("Company Name: "+c.getName());
                 linearLayout.addView(textView16);
 
                 TextView textView17 = new TextView(SearchJobsNavBar.this);
+                textView17.setTextSize(16);
                 textView17.setText("Job Id: "+c.getJobId4());
                 linearLayout.addView(textView17);
 
                 TextView textView18 = new TextView(SearchJobsNavBar.this);
+                textView18.setTextSize(16);
                 textView18.setText("Job Type: "+c.getJobType4());
                 linearLayout.addView(textView18);
 
                 TextView textView19 = new TextView(SearchJobsNavBar.this);
-                textView19.setText("Salary: "+c.getSalary4());
+                textView19.setTextSize(16);
+                textView19.setText("Salary: "+c.getSalary4()+"\n-------------------------------------------------------------\n");
                 linearLayout.addView(textView19);
 
             }
@@ -205,7 +225,11 @@ public class SearchJobsNavBar extends AppCompatActivity
             return true;
         }
 
-
+        else if(id==R.id.help)
+        {
+            startActivity(new Intent(getApplicationContext(),studentHelp.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

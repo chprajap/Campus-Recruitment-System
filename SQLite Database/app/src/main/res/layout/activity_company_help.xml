@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.chetan.campusrecruitmentsystem.companyHelp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/student_help_text5"
+            android:padding="20dp"
+            android:text="Welcome to Company Help"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text"
+            android:padding="20dp"
+            android:text="1.Company is one user of campus recruitment system."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text1"
+            android:padding="20dp"
+            android:text="2.Company emailId must be unique."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text2"
+            android:padding="20dp"
+            android:text="3.Navigation Bar is provided."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text3"
+            android:padding="20dp"
+            android:text="4.Home takes you to the Main home page where Details of current logged in Company is displayed."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text4"
+            android:padding="20dp"
+            android:text="5.Post Jobs provides a form which Company can fill to post job."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text6"
+            android:padding="20dp"
+            android:text="6.View Student Applications shows you all the students who have applied for your Company with job details."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text7"
+            android:padding="20dp"
+            android:text="7.Update Details can update the company details."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_help_text8"
+            android:padding="20dp"
+            android:text="8.Change Password will provide an interace to change password."/>
+
+    </LinearLayout>
+
+</ScrollView>
